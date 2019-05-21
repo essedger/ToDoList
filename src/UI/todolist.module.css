@@ -1,0 +1,100 @@
+.todolist {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+    margin: 0 auto;
+    border: 2px solid blue;
+    padding: 10px;
+}
+.container {
+    min-height: 100px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 7px
+}
+.item {
+    flex: 0 0 auto;
+    margin: 5px;
+}
+
+.title {
+    grid-column: 1;
+    justify-self: left;
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-right: 10px;
+    text-align: left;
+    background: #a9afc6;
+    border-radius: 5px;
+    padding: 10px 30px 10px 10px;
+
+}
+
+.tasks {
+    grid-column: 1/3;
+    background: #f2f5f8;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.input {
+    grid-column: 1;
+    grid-row: 1;
+    resize: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 20px;
+    padding: 10px 30px 10px 10px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.add_button{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 120px;
+    height: 55px;
+}
+.add_container{
+
+}
+.button {
+    margin: 5px;
+    padding: 5px;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.status {
+    grid-column: 1/3;
+    grid-row: 3;
+    padding-top: 10px;
+    color: green;
+}
+
+.loader {
+    border: 3px solid hsla(185, 100%, 62%, 0.2);
+    border-top-color: #24aa98;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
